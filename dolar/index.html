@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Requisito: atualizar a página a cada 10 segundos usando HTML -->
+  <meta http-equiv="refresh" content="10">
+
+  <title>Cotação do Dólar (USD/BRL)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="painel">
+    <div class="topo">
+      <h1>Dólar hoje</h1>
+      <span class="par">USD → BRL</span>
+    </div>
+
+    <p class="atual-rotulo">Valor atual</p>
+    <p class="atual" id="valorAtual">Carregando...</p>
+    <span class="variacao" id="variacao">--</span>
+
+    <section class="extremos">
+      <div class="extremo">
+        <span>Maior valor do dia</span>
+        <strong id="valorMaximo">--</strong>
+      </div>
+      <div class="extremo">
+        <span>Menor valor do dia</span>
+        <strong id="valorMinimo">--</strong>
+      </div>
+    </section>
+
+    <p class="rodape" id="atualizacao">Buscando cotação...</p>
+    <p class="erro" id="erro"></p>
+  </main>
+
+</body>
+</html>
